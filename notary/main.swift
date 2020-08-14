@@ -27,4 +27,5 @@ struct Notarization: ParsableCommand {
         try? notary.notarize()
     }
 }
+Notarization.main()
 
