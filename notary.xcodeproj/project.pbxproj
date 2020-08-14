@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0B62F40C24E639DE0046530B /* ArgumentParser in Frameworks */ = {isa = PBXBuildFile; productRef = 0B62F40B24E639DE0046530B /* ArgumentParser */; };
 		0BA856E024E23C96002398F6 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA856DF24E23C96002398F6 /* main.swift */; };
 		0BA856E724E2D86B002398F6 /* notary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA856E624E2D86B002398F6 /* notary.swift */; };
 		0BA856E924E2FD98002398F6 /* keyvalue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0BA856E824E2FD98002398F6 /* keyvalue.swift */; };
@@ -36,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B62F40C24E639DE0046530B /* ArgumentParser in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,6 +86,9 @@
 			dependencies = (
 			);
 			name = notary;
+			packageProductDependencies = (
+				0B62F40B24E639DE0046530B /* ArgumentParser */,
+			);
 			productName = notary;
 			productReference = 0BA856DC24E23C96002398F6 /* notary */;
 			productType = "com.apple.product-type.tool";
@@ -111,6 +116,9 @@
 				Base,
 			);
 			mainGroup = 0BA856D324E23C96002398F6;
+			packageReferences = (
+				0B62F40A24E639DE0046530B /* XCRemoteSwiftPackageReference "swift-argument-parser" */,
+			);
 			productRefGroup = 0BA856DD24E23C96002398F6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -289,6 +297,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0B62F40A24E639DE0046530B /* XCRemoteSwiftPackageReference "swift-argument-parser" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/apple/swift-argument-parser.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.2.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0B62F40B24E639DE0046530B /* ArgumentParser */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0B62F40A24E639DE0046530B /* XCRemoteSwiftPackageReference "swift-argument-parser" */;
+			productName = ArgumentParser;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0BA856D424E23C96002398F6 /* Project object */;
 }

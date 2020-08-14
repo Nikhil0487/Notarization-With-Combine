@@ -7,7 +7,8 @@
 
 import Foundation
 import Combine
-
+/// This class is an example for Key-Value observer combine
+/// This classis not used
 class ProcessHandler: NSObject {
     @objc dynamic var data = Data()
     func createProces() {
